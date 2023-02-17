@@ -17,3 +17,17 @@
     In this way we can find the answer, no matter how big the number is.
     By using a loop we obtain a time complexity of O(N) while, using this method 
     we obtain a time complexity of O(1).
+
+
+### Find the XOR of all the numbers in the range (L - R)
+[NOTE] - Required complexity O(1)
+
+--> For example, we try to find the XOR of numbers between (3 - 6)
+    Exapanding, we need to find (3 ^ 4 ^ 5 ^ 6)
+
+    We can easily find the XOR of any number by the previous technique.
+    XOR of 6 - (1 ^ 2 ^ 3 ^ 4 ^ 5 ^ 6)
+    XOR of 2 - (1 ^ 2)
+
+    If we do XOR between them then (1 ^ 2) cancels out and we get our desired result.
+    So, the solution is (XOR(R)) ^ (XOR(L - 1))
