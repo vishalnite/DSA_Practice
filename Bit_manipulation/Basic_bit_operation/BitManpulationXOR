@@ -1,0 +1,19 @@
+### Given a number N, find the XOR of all the numbers between 1 to N
+[NOTE] - Do not use loop
+
+--> Start finding XOR of numbers from 1 and doing that we will find a pattern in the answer.
+    for example, 1 - 1
+                 2 - 3
+                 3 - 0
+                 4 - 4
+                 5 - 1
+                 6 - 7
+                 7 - 0
+                 8 - 8
+    This implies -- if(N % 4 == 0) then answer is N
+                    if(N % 4 == 1) then answer is 1
+                    if(N % 4 == 2) then answer is N + 1
+                    if(N % 4 == 3) then answer is 0
+    In this way we can find the answer, no matter how big the number is.
+    By using a loop we obtain a time complexity of O(N) while, using this method 
+    we obtain a time complexity of O(1).
