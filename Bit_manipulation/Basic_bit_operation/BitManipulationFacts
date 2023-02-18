@@ -1,0 +1,44 @@
+[NOTE] - Do not change the original number as done here. Instead make another variable called 'mask' and then do the required operation.
+### Setting a bit at the ith position in the number 'num'
+
+--> Use OR(|) operation
+    Left shift 1 by i (1 << i)
+    num |= (1 << i)
+
+
+### Unsetting a bit at the ith position in the number 'num'
+
+--> Use AND(&) operation
+    Left shift 1 by i (1 << i) and negate this value using (~)
+    num &= (~(1 << i))
+
+
+### Toggling a bit at the ith position in the number 'num'
+
+--> Use XOR(^) operation
+    Left shift 1 by i (1 << i)
+    num ^= (1 << i)
+
+
+### Checking if the bit at the ith position in the number 'num' is set or unset
+
+--> Use AND(&) operation
+    Left shift 1 by i (1 << i)
+    num & (1 << i)
+    The above operation returns a positive value if the bit is set, otherwise it returns 0.
+
+
+### Stripping off the lowest set bit
+
+--> use AND(&) operation
+    num & (num - 1)
+    This works because (num - 1) inverts all the bits till the lowest set bit including it and thus, doing (&) gives us the 
+    desired result.
+
+
+### Getting the position of the lowest set bit
+
+--> use AND(&) operation
+    num & (-num)
+    (-num) is the 2's complement of a number and doing (&) with it gives us the desired result.
+    We can easily check its validity through binary representation.
