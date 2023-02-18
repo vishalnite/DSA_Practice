@@ -1,4 +1,12 @@
 [NOTE] - Do not change the original number as done here. Instead make another variable called 'mask' and then do the required operation.
+
+### Checking if a number is odd or even 
+
+--> Use AND(&) operation with the number and 1.
+    If (num & 1) is 1 then num is odd, otherwise it is even.
+    The last bit of a number is always set therfore, it gives the desired solution.
+
+
 ### Setting a bit at the ith position in the number 'num'
 
 --> Use OR(|) operation
@@ -42,3 +50,28 @@
     num & (-num)
     (-num) is the 2's complement of a number and doing (&) with it gives us the desired result.
     We can easily check its validity through binary representation.
+
+
+### Count the number of set bits in a number
+
+--> Here we can run a loop till the number is 0
+    If the num & 1 == 1 then increment the Count
+    Left shift the number by 1
+
+    count = 0
+    while(num != 0) {
+        if(num & 1 == 1)
+            count++
+        num = num >> 1
+    }
+    [It's T.C is O(Number of bits)]
+
+    We can improve it slightly by counting only the lowest set bit of a number as we have done previously
+
+    count = 0
+    while(num != 0) {
+        num = num & (num - 1)
+        count++
+    }
+    [It's T.C. is O(number of set bits)
+     but for number like 15(1111) both the methods gives the same T.C.]
