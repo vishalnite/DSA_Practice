@@ -5,6 +5,8 @@ using namespace std;
 The outer loop runs from 0 to n - 2
 The inner loop runs from index of outer loop to n - 1 and finds the smallest element from the unsorted part of the aaray. 
 After this the smallest element is swapped with the first element in the unsorted part and is made sorted.
+T.C - O(N^2)
+S.C - O(1)
 */
 
 void selectionSort(vector<int> &arr, int n) {
