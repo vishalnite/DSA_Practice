@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-/* In selection sort, we try to put the largest element to the end of the array.
+/* In bubble sort, we try to put the largest element to the end of the array.
 We run two loops.
-The outer loop runs from 0 to n - 1.
+The outer loop runs from 0 to n - 2.
 The inner loop runs from 0 to n - i - 1. The elements are swapped if arr[index] > arr[index + 1]
 In every pass we reduce the number of iterations because the last element in that range is the largest element.
 T.C - O(N^2)
