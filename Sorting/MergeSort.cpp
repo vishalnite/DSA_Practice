@@ -7,7 +7,7 @@ The base condition is if (low >= high) then return.
 We use a function merge that merges the two sorted array. 
 It stores the element into a temporary array and after merging puts the sorted elemen into the original array.
 [NOTE: The recursive call first divides the left of the array and then moves to the right.]
-T.C - O(NlogN)
+T.C - O(NlogN) - in all the cases
 S.C - O(N)
 */
 
@@ -51,12 +51,12 @@ void mergeSort(vector<int> &arr, int low, int high) {
     merge(arr, low, mid, high);
 }
 
-int main() {
-    vector<int> arr {13, 46, 52, 9, 10, 21};
+// int main() {
+//     vector<int> arr {13, 46, 52, 9, 10, 21};
 
-    mergeSort(arr, 0, 5);
+//     mergeSort(arr, 0, 5);
 
-    for(int i = 0; i < 6; i++) {
-        cout << arr[i] << " ";
-    }
-}
+//     for(int i = 0; i < 6; i++) {
+//         cout << arr[i] << " ";
+//     }
+// }
