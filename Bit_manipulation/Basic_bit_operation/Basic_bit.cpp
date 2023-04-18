@@ -1,4 +1,4 @@
-// Progrm to show basic bit manipulation operations like (&, |, ~, ^, <<, >>)
+// Progrm to show basic bitwise operations like (&, |, ~, ^, <<, >>)
 #include<iostream>
 using namespace std;
 
