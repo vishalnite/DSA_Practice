@@ -1,0 +1,14 @@
+Typical question 
+    - Count all ways
+    - Minimize or Maximize 
+
+How to approach any Dynamic Programming problem?
+    - Represent in terms of indexes
+    - Do all possible stuffs
+    - Count all ways or find the best
+
+Order of optimization 
+-- Recursion solution -- Exponential
+-- Memoization -- Linear with extra space -- Top-Down approach
+-- Tabulation -- Bottom-Up approach
+-- Space Optimization -- Whenever there is less variables then it can be always be space optimized
