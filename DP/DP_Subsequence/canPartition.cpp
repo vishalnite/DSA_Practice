@@ -95,7 +95,7 @@ bool canPartition(vector<int> &arr, int n)
 	for(int i = 0; i < n; i++) {
 		dp[i][0] = true;
 	}
-	dp[0][arr[0]] = true;
+	dp[0][arr[0]] = true; //Always check whether arr[0] <= target
 
 	for(int i = 1; i < n; i++) {
 		for(int k = 1; k <= target; k++) {
