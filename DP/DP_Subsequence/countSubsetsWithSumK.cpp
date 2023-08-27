@@ -2,6 +2,19 @@
 Count the number of subsets with sum K. 
 [General rule, whenever there is a count problem from base case return 1 or 0 and add the pick and not pick cases]
 [Similar to find subset with sum K problem]
+
+We have done it for constraints [1 <= arr[i] < n].
+But if we give {0, 0, 1} with k = 1 then it will return 1 instead of 4
+
+Possible Solutions:
+- Count number of zeroes and calculate pow(2, cnt) and multiply with the original answer
+- OR change the base case to try to go deep into recursion
+    if(ind == 0) {
+        if(sum == 0 && arr[0] == 0) return 2;
+        if(sum == 0 || sum == num[0]) return 1;
+        return 0;
+    }
+    
 */
 
 /**************** Recursion *******************/
