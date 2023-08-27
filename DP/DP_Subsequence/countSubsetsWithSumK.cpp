@@ -15,6 +15,13 @@ Possible Solutions:
         return 0;
     }
     
+For Tabulation -
+    if(arr[0] == 0) dp[0][0] = 2;
+    else dp[0][0] = 1;
+
+    if(arr[0] != 0 && arr[0] <= k) {
+        dp[0][arr[0]] = 1;
+    }
 */
 
 /**************** Recursion *******************/
