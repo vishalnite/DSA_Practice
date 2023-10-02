@@ -30,7 +30,7 @@ ll f(int i, int j, int isTrue, string &exp) {
 
     ll ways = 0;
 
-    for(int ind = i + 1; ind <= j - 1; ind++) {
+    for(int ind = i + 1; ind <= j - 1; ind += 2) {
         ll lT = f(i, ind - 1, 1, exp);
         ll lF = f(i, ind - 1, 0, exp);
         ll rT = f(ind + 1, j, 1, exp);
@@ -92,7 +92,7 @@ ll f(int i, int j, int isTrue, string &exp, vector<vector<vector<ll>>> &dp) {
 
     ll ways = 0;
 
-    for(int ind = i + 1; ind <= j - 1; ind++) {
+    for(int ind = i + 1; ind <= j - 1; ind += 2) {
         ll lT = f(i, ind - 1, 1, exp, dp);
         ll lF = f(i, ind - 1, 0, exp, dp);
         ll rT = f(ind + 1, j, 1, exp, dp);
@@ -154,7 +154,7 @@ int evaluateExp(string &exp) {
             for(int isTrue = 0; isTrue <= 1; isTrue++) {
                 
                 ll ways = 0;
-                for(int ind = i + 1; ind <= j - 1; ind++) {
+                for(int ind = i + 1; ind <= j - 1; ind += 2) {
                     ll lT = dp[i][ind - 1][1];
                     ll lF = dp[i][ind - 1][0];
                     ll rT = dp[ind + 1][j][1];
