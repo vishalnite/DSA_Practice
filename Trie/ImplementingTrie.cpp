@@ -5,10 +5,10 @@ TRIE - basically used for autocomplete and spell checker
 It implements 3 functionalities
 
 Basic structure of trie
-class Node {
+struct Node {
     Node *links[26];
     bool isEnd;
-}
+};
 
 A trie will always have a root node
 
