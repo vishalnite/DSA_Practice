@@ -1,0 +1,6 @@
+Recusrion: Recursion is when a function calls itself until a specified condition is met.
+This condition is called base condition.
+
+- In case of infinite recursion(without any base condition), it reaches a state called stack overflow.
+- Visualize recursion using recursion tree (useful for debugging).
+
