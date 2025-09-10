@@ -4,3 +4,6 @@ This condition is called base condition.
 - In case of infinite recursion(without any base condition), it reaches a state called stack overflow.
 - Visualize recursion using recursion tree (useful for debugging).
 
+Backtracking: The actual work done by the function is after the recursive function call so that, the last function call's definition gets executed first.
+It's basically the reverse of linear recursion.
+
