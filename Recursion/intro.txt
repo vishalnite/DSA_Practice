@@ -7,3 +7,13 @@ This condition is called base condition.
 Backtracking: The actual work done by the function is after the recursive function call so that, the last function call's definition gets executed first.
 It's basically the reverse of linear recursion.
 
+Multiple recursive function calls:
+-- Very important for all sorts of DP problem
+-- How to approach -- Visualize using recursion tree and draw the base case and the action to be performed (eg - Fibonacci series)
+-- When multiple recursion functions are used the consecutive functions won't be called unless the previous function has ended
+   In terms of a tree, it travels in DFS fashion.
+
+-- How to determine T.C. -- Let's say the number of function calls is m and you need to find recursive value until n (the input value).
+   Then T.C. will be ~ O(m^n)
+   For Fibonacci series, to determine the nth value the T.C. is near about O(2^n)
+
