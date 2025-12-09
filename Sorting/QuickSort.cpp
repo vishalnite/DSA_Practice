@@ -8,7 +8,7 @@ We need to put the pivot in its correct position in the array.
 That position can be considered as the partition index and then the array is divided into two parts.
 
 TO find the partition index-
-we put two pointers i at the low and j at the hign.
+we put two pointers i at low and j at high.
 Increment i until we find element greater than pivot element and decrement j until we find element smaller then pivot.
 If i < j, we swap the elements
 else we come out of loop and swap jth element with the pivot. 
